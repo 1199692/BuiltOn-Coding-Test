@@ -1,4 +1,4 @@
-2. Create a simple algorithm for a Calculator that supports input of mathematical expressions with the basic operations: +, -, * and /. It should allow the usage of brackets and understand operator precedence:
+#Questio 2. Create a simple algorithm for a Calculator that supports input of mathematical expressions with the basic operations: +, -, * and /. It should allow the usage of brackets and understand operator precedence:
 
 Solution: Algorithm Written in the below box:
 
@@ -13,18 +13,18 @@ Solution: Algorithm Written in the below box:
        3.2.4 A right parenthesis:
          1. While the thing on top of the operator stack is not a 
            left parenthesis,
-1)	Pop the operator from the operator stack.
-2)	Pop the value stack twice, getting two operands.
-3)	Apply the operator to the operands, in the correct order.
-4)	Push the result onto the value stack.
+            1)	Pop the operator from the operator stack.
+            2)	Pop the value stack twice, getting two operands.
+            3)	Apply the operator to the operands, in the correct order.
+            4)	Push the result onto the value stack.
          2. Pop the left parenthesis from the operator stack, and discard it.
        3.2.5 An operator (call it thisOp):
          1 While the operator stack is not empty, and the top thing on the
            operator stack has the same or greater precedence as thisOp,
-1)	Pop the operator from the operator stack.
-2)	Pop the value stack twice, getting two operands.
-3)	Apply the operator to the operands, in the correct order.
-4)	Push the result onto the value stack.
+            1)	Pop the operator from the operator stack.
+            2)	Pop the value stack twice, getting two operands.
+            3)	Apply the operator to the operands, in the correct order.
+            4)	Push the result onto the value stack.
          2 Push thisOp onto the operator stack.
 4. While the operator stack is not empty,
     1 Pop the operator from the operator stack.
